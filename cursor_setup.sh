@@ -9,7 +9,7 @@ readonly ICON_DIR="$HOME/.local/share/icons"
 readonly USER_DESKTOP_FILE="$HOME/Desktop/cursor.desktop"
 readonly DOWNLOAD_URL="https://downloader.cursor.sh/linux/appImage/x64"
 readonly ICON_URL="https://mintlify.s3-us-west-1.amazonaws.com/cursor/images/logo/app-logo.svg"
-readonly VERSION_CHECK_TIMEOUT=5 # in seconds | if you have a slow connection, increase this value to 10, 15, or more
+readonly VERSION_CHECK_TIMEOUT=30 # in seconds | if you have a slow connection, increase this value to 10, 15, or more
 readonly SPINNERS=("meter" "line" "dot" "minidot" "jump" "pulse" "points" "globe" "moon" "monkey" "hamburger")
 readonly SPINNER="${SPINNERS[0]}"
 readonly DEPENDENCIES=("gum" "curl" "wget" "pv" "bc" "find:findutils" "chmod:coreutils" "timeout:coreutils" "mkdir:coreutils" "apparmor_parser:apparmor-utils")
@@ -184,7 +184,7 @@ fetch_remote_version() {
     logg error "Could not fetch the filename info. Please check that the 'DOWNLOAD_URL' variable is correct and try again."
     return 1
   fi
-  logg info "$(echo -e "Latest version online:\n      - name: $remote_name\n      - version: $remote_version\n      - size: $(convert_to_mb "$remote_size")\n      - MD5 Hash: $remote_md5\n")"
+    logg info "$(echo -e "Latest version online:\n      - name: $remote_name\n      - version: $remote_version\n      - size: $(convert_to_mb "$remote_size")\n      - MD5 Hash: $remote_md5\n")"
 }
 
 find_local_version() {
