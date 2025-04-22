@@ -102,7 +102,7 @@ This command downloads the main script (`cursor_setup.sh`), places it in `${HOME
 
 When you run the script, you’ll see an interactive menu like this:
 
-<p><img src="https://raw.githubusercontent.com/jorcelinojunior/cursor-setup-wizard/main/images/menu.png" alt="Cursor Setup Wizard Menu" width="600"/></p>
+<p><img src="https://raw.githubusercontent.com/kznxz/cursor-setup-wizard/main/images/menu.png" alt="Cursor Setup Wizard Menu" width="600"/></p>
 
 - **All-in-One**: Fully automates the download, setup, and configuration process.
 - **Reconfigure All**: Reuses the existing AppImage for reconfigurations without re-downloading.
@@ -127,7 +127,7 @@ If you're interested in contributing, here are some areas where your help would 
 
 To get started:
 
-1. **Fork the Repository**: Use the ["Fork"](https://github.com/jorcelinojunior/cursor-setup-wizard/fork) button to create your own copy.
+1. **Fork the Repository**: Use the ["Fork"](https://github.com/kznxz/cursor-setup-wizard/fork) button to create your own copy.
 2. **Clone Your Fork**:
    ```bash
    git clone https://github.com/<your-username>/cursor-setup-wizard.git
